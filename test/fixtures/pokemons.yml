@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  type: 
+  type_pokemon: MyString
   level: 1
   evolution: MyString
 
 two:
   name: MyString
-  type: 
+  type_pokemon: MyString
   level: 1
   evolution: MyString

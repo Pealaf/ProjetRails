@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5894c4a-8804-4409-8604-91c7e6fc4dcb" name="Changes" comment="Initialisation du projet en api">
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    <list default="true" id="f5894c4a-8804-4409-8604-91c7e6fc4dcb" name="Changes" comment="Création des modèles pokemon et champion_lol.">
+      <change beforePath="$PROJECT_DIR$/.idea/ProjetRails.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/pokemons_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/pokemons_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240118132853_create_pokemons.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20240118134028_create_champion_lols.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/pokemons_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/pokemons_controller_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/pokemons.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/pokemons.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1705583121613</updated>
-      <workItem from="1705583123072" duration="2412000" />
+      <workItem from="1705583123072" duration="4028000" />
     </task>
     <task id="LOCAL-00001" summary="Initialisation du projet">
       <option name="closed" value="true" />
@@ -133,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705584315090</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Création des modèles pokemon et champion_lol.">
+      <option name="closed" value="true" />
+      <created>1705586041846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705586041846</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialisation du projet" />
     <MESSAGE value="Initialisation du projet en api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialisation du projet en api" />
+    <MESSAGE value="Création des modèles pokemon et champion_lol." />
+    <option name="LAST_COMMIT_MESSAGE" value="Création des modèles pokemon et champion_lol." />
   </component>
 </project>

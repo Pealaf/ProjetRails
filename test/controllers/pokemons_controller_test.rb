@@ -12,7 +12,7 @@ class PokemonsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create pokemon" do
     assert_difference("Pokemon.count") do
-      post pokemons_url, params: { pokemon: { evolution: @pokemon.evolution, level: @pokemon.level, name: @pokemon.name, type: @pokemon.type } }, as: :json
+      post pokemons_url, params: { pokemon: { evolution: @pokemon.evolution, level: @pokemon.level, name: @pokemon.name, type_pokemon: @pokemon.type_pokemon } }, as: :json
     end
 
     assert_response :created
@@ -24,7 +24,7 @@ class PokemonsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update pokemon" do
-    patch pokemon_url(@pokemon), params: { pokemon: { evolution: @pokemon.evolution, level: @pokemon.level, name: @pokemon.name, type: @pokemon.type } }, as: :json
+    patch pokemon_url(@pokemon), params: { pokemon: { evolution: @pokemon.evolution, level: @pokemon.level, name: @pokemon.name, type_pokemon: @pokemon.type_pokemon } }, as: :json
     assert_response :success
   end
 

@@ -51,6 +51,6 @@ class PokemonsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pokemon_params
-      params.require(:pokemon).permit(:name, :type, :level, :evolution)
+      params.require(:pokemon).permit(:name, :type_pokemon, :level, :evolution)
     end
 end
