@@ -1,0 +1,2 @@
+class ChampionLol < ApplicationRecord
+end
