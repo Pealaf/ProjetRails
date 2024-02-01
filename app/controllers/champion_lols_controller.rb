@@ -6,22 +6,23 @@ class ChampionLolsController < ApplicationController
   def index
     @champion_lols = ChampionLol.all
 
-    render xml: @champion_lols
+    render xml: @champion_lols.as_json
   end
 
   # GET /champion_lols/1
   # Récupération d'un champion de LOL par son ID
   def show
-    render xml: @champion_lol
+    render xml: @champion_lol.as_json
   end
 
   # POST /champion_lols
   # Création d'un champion de LOL
   def create
-    @champion_lol = ChampionLol.new(champion_lol_params)
+    data = Hash.from_xml(request.body.read)
+    @champion_lol = ChampionLol.new(data["champion_lol"])
 
     if @champion_lol.save
-      render xml: @champion_lol, status: :created, location: @champion_lol
+      render xml: @champion_lol.as_json, status: :created, location: @champion_lol
     else
       render xml: @champion_lol.errors, status: :unprocessable_entity
     end
@@ -30,8 +31,9 @@ class ChampionLolsController < ApplicationController
   # PATCH/PUT /champion_lols/1
   # Modification d'un champion de LOL
   def update
-    if @champion_lol.update(champion_lol_params)
-      render xml: @champion_lol
+    data = Hash.from_xml(request.body.read)
+    if @champion_lol.update(data["champion_lol"])
+      render xml: @champion_lol.as_json
     else
       render xml: @champion_lol.errors, status: :unprocessable_entity
     end
